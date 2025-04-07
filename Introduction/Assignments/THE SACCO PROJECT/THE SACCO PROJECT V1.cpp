@@ -161,7 +161,7 @@ public:
 void menu()
 {
     cout << "\n Welcome to Our SACCO Management System! \n";
-    cout<< "\n Enter a number to perform an action: \n";
+    cout << "\n Enter a number to perform an action: \n";
     cout << "1. Add Member\n";
     cout << "2. Deposit\n";
     cout << "3. Withdraw\n";
@@ -169,7 +169,7 @@ void menu()
     cout << "5. Repay Loan\n";
     cout << "6. Display All Members\n";
     cout << "0. Exit\n";
-    cout << "Enter your choice: ";
+    cout << "Enter a number: ";
 }
 
 int main()
