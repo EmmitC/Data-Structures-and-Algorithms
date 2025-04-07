@@ -1,6 +1,6 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include <iostream>
+#include <string>
+#include <vector>
 
 #define MAX_NAME_LENGTH 50
 
@@ -8,9 +8,15 @@ int main() {
     int numDomestic, numWild;
     
     // Get number of domestic animals
-    printf("Enter the number of domestic animals: ");
-    scanf("%d", &numDomestic);
+    std::cout<<"Enter the number of domestic animals: ";
+    if(!(std::cin>>numDomestic)||numDomestic<=0)
+    {std::cout<<"Invalid input! \n";
+    return 1;
+}
     
+//Read domestic animsl names
+domestic.resize(numDomestic);
+std::cout<<""
     // Allocate memory for domestic animals
     char **domestic = malloc(numDomestic * sizeof(char *));
     for (int i = 0; i < numDomestic; i++) {
